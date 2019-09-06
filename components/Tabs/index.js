@@ -39,6 +39,8 @@ function tabCreater(tabName) {
     return tab;
 }
 
+axiosCards = 0;
+
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then((info) => {
         // debugger

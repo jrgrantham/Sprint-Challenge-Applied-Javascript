@@ -24,6 +24,10 @@ function Header() {
     span1.classList.add('date');
     span2.classList.add('temp');
 
+    h1.textContent = 'Lambda Times';
+    span1.textContent = 'MARCH 28, 2019';
+    span2.textContent = '98°'
+
     return header;
 
 }

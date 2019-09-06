@@ -18,7 +18,7 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
-function cardMaker(axiosCards) {
+function cardMaker(cardInfo) {
 
     const cardDiv = document.createElement('div');
     const headlineDiv = document.createElement('div');
@@ -38,9 +38,9 @@ function cardMaker(axiosCards) {
     authorDiv.classList.add('author');
     imgDiv.classList.add('img-container');
 
-    headlineDiv.textContent = axiosCards.headline;
-    img.src = axiosCards.authorPhoto;
-    span.textContent = 'By ' + axiosCards.authorName;
+    headlineDiv.textContent = cardInfo.headline;
+    img.src = cardInfo.authorPhoto;
+    span.textContent = 'By ' + cardInfo.authorName;
 
     return cardDiv;
 }

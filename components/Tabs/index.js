@@ -39,8 +39,6 @@ function tabCreater(tabName) {
     return tab;
 }
 
-// let axiosData = 0;
-
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then((info) => {
         // debugger
@@ -51,4 +49,3 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .catch(error => {
         document.body.innerText = error.message;
       });
-        
